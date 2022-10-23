@@ -1,0 +1,286 @@
+<html>
+    <head>
+        <title>My Profile</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css"> <!--links the index.html file to the style.css file-->
+        <!--Bootstrap features help the website to adjust itself in devices of different sizes preventing it from getting distorted when open in a different device-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="navbar-inverse" style="position:sticky; top:0; z-index:99999;">
+            <div class="navbar-header"> <!--Nav tags adds menu bar to the website-->
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+                    <!--Data toggle brings in the collapse and expand features of the button, data-target will call the data of the menu with the id navbar1-->
+                    <span class="icon-bar"></span> <!--This is the bar icon for creating the button with three bars-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Active Studying</a> <!--This creates the header of the menu-->
+            </div>
+            <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="nav navbar-nav navbar-right"> <!--Aligns the menu to the right of thhe menu bar-->
+            <li class="links"> <a href="#home">Home</a></li>
+            <li class="links"> <a href="#techniques">Techniques</a></li>
+            <li class="links"> <a href="#reviews">Reviews</a></li>
+            <li class="links"> <a href="#contacts">Contacts</a></li>
+
+           <input id="s1" type="text" placeholder="type here" style="margin:10px;">
+           <button onclick="add()" class="btn btn-success" style="margin-top:10px; margin-bottom:10px; margin-right:10px;"><span class="glyphicon glyphicon-search text-success"></span></button>
+          <!--<a href="https://www.google.com/search?q=+#s1" target="_blank"><button class="btn btn-success" style="margin-top:10px; margin-bottom:10px; margin-right:10px;"><span class="glyphicon glyphicon-search text-success"></span></button></a>  -->
+
+            
+        </ul>
+    </div>
+
+    </nav>
+    <!--*********************Below code is the code for the annoucement*********************-->
+    <marquee onmouseover="this.stop()" onmouseout="this.start()" style="z-index:99999;">****Find methods, examples and tips of the best studying techniques in one place****</marquee> 
+    
+    <!--**************The code for the carousel starts here*****************-->
+    <div class="carousel slide" id="mycarousel">
+        <div class="carousel-inner"> <!--Carousel inner consists of the image and the h4 text-->
+            <div class="item active"> <!--Item active is the content of the first slide that will show up when the website launches-->
+                <center>
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFPROoLus0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+                </center>
+            </div>
+            <div class="item"> <!--Item active is the content of the first slide that will show up when the website launches-->
+                <center>
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFPRTVutwY&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+                </center>
+            </div>
+            <div class="item"> <!--Item active is the content of the first slide that will show up when the website launches-->
+                <center>
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFPRcNHvF0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+                </center>
+            </div>
+        </div>
+        <a href="#mycarousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span> <!--carousel-control gives a function to the glyphicon arrow and data-slide enables the left movement of the slides-->
+        </a>
+        <a href="#mycarousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span> <!--carousel-control gives a function to the glyphicon arrow and data-slide enables the right movement of the slides-->
+        </a>
+    </div>
+    <div class="container"> <!--This class adds spacing on two sides (left and right) content inside it-->
+
+        <div class="page-header" id="techniques"> <!--Creates the header name as achievements. Page header class gives a specific font size and font colour to the text-->
+        <h2>Techniques</h2>
+        </div>
+        <div class="dropdown" data-toggle="collapse" data-target="#a1"> <!--data toggle gives the collapse and expanding feature to the dropdown. Data target is the target towards the content-->
+            <span class="glyphicon glyphicon-file"></span> <!--Bootstrapping icons-->
+            Active Recall<i class="fa fa-sort-desc"></i> <!--fa fa-sort-desc is the icon that creates the arrow-->
+        </div>
+        <div class="collapse" id="a1"> <!--if data toggle is used then the content should have a class collapse-->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> 
+                <img src="https://www.teentoolkit.net/uploads/3/7/4/3/37430943/active-revision-techniques-2_orig.jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 bg-info">
+                <h5 class="text-danger">Verbal Study Technique</h5>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <label>Active Recall is the most widely used </label>
+                <br>
+            </div>
+        </div>
+        <div class="dropdown" data-toggle="collapse" data-target="#a4"> <!--data toggle gives the collapse and expanding feature to the dropdown. Data target is the target towards the content-->
+            <span class="glyphicon glyphicon-file"></span> <!--Bootstrapping icons-->
+            Active Recall<i class="fa fa-sort-desc"></i> <!--fa fa-sort-desc is the icon that creates the arrow-->
+        </div>
+        <div class="collapse" id="a4"> <!--if data toggle is used then the content should have a class collapse-->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> 
+                <img src="https://www.teentoolkit.net/uploads/3/7/4/3/37430943/active-revision-techniques-2_orig.jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 bg-info">
+                <h5 class="text-danger">Verbal Study Technique</h5>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <label>Active Recall is the most widely used </label>
+                <br>
+            </div>
+        </div>
+        <div class="dropdown" data-toggle="collapse" data-target="#a5"> <!--data toggle gives the collapse and expanding feature to the dropdown. Data target is the target towards the content-->
+            <span class="glyphicon glyphicon-file"></span> <!--Bootstrapping icons-->
+            Active Recall<i class="fa fa-sort-desc"></i> <!--fa fa-sort-desc is the icon that creates the arrow-->
+        </div>
+        <div class="collapse" id="a5"> <!--if data toggle is used then the content should have a class collapse-->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> 
+                <img src="https://www.teentoolkit.net/uploads/3/7/4/3/37430943/active-revision-techniques-2_orig.jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 bg-info">
+                <h5 class="text-danger">Verbal Study Technique</h5>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <label>Active Recall is the most widely used </label>
+                <br>
+            </div>
+        </div>
+        <div class="dropdown" data-toggle="collapse" data-target="#a6"> <!--data toggle gives the collapse and expanding feature to the dropdown. Data target is the target towards the content-->
+            <span class="glyphicon glyphicon-file"></span> <!--Bootstrapping icons-->
+            Active Recall<i class="fa fa-sort-desc"></i> <!--fa fa-sort-desc is the icon that creates the arrow-->
+        </div>
+        <div class="collapse" id="a6"> <!--if data toggle is used then the content should have a class collapse-->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> 
+                <img src="https://www.teentoolkit.net/uploads/3/7/4/3/37430943/active-revision-techniques-2_orig.jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 bg-info">
+                <h5 class="text-danger">Verbal Study Technique</h5>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <label>Active Recall is the most widely used </label>
+                <br>
+            </div>
+        </div>
+        <div class="dropdown" data-toggle="collapse" data-target="#a2">
+            <span class="glyphicon glyphicon-file"></span>
+            Spaced Repetition <i class="fa fa-sort-desc"></i>
+        </div>
+        <div class="collapse" id="a2">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="https://revisingrubies.com/wp-content/uploads/2020/06/Using-Spaced-Repetition-1.png" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 bg-info">
+                <h5 class="text-danger">Review Studying Technique</h5>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <label>All the students till class 5 were noticed that our school is organising a science exhibition and the students interested in taking part in it can give their names to the respective science teachers. Cheryl gave a wonderful presentation on future transport and communications.</label>
+                <br>
+            </div>
+        </div>
+        <div class="dropdown" data-toggle="collapse" data-target="#a3">
+            <span class="glyphicon glyphicon-file"></span>
+            Blurting <i class="fa fa-sort-desc"></i>
+        </div>
+        <div class="collapse" id="a3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="https://studiology2019.files.wordpress.com/2019/01/physics-mm-e1548179887766.jpg" id="im2" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 bg-info">
+                <h5 class="text-danger">Writing and Reviewing Technique</h5>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <span class="glyphicon glyphicon-star text-success"></span>
+                <label>Blurting, as it suggests is just saying whatever comes on your mind. After reading a few pages of the textbook, watching a video or reviewing your class notes, write everything you can remember without referring to your study material. It is proven to be one of most effective study techiques as of today because it helps the brain recollect even the tiny pieces of information. 
+                    <br><br>
+
+                TIPS:
+                <br>
+                1. Don't overload yourself with a lot of inormation. Instead, start in smaller bunches because too much information can make it difficult to remember the small details.
+                <br>
+                2. Avoid trying to make these notes pretty and aesthetic because it is a waste of time and the technique. The most productive way to use this technique is taking a blank piece of paper & pencil and write anything and everything that you can remember all around the paper. 
+                <br>
+                3. Set a certain time limit for yourself. For example, if you watched a 10 minute video, set a timer for 8 minutes and follow the blurting technique. Don't give yourself more time than the amount of time you sepnt reading because the purpose of blurting it to increase brainpower, speed and create summaries of information.
+                </label>
+                <br>
+            </div> 
+        </div> 
+        
+        
+<!--***********************Code for the list***********************-->
+        <div class="page-header" id="reviews">
+            <h6 id="hd">Ignore</h6>
+            <h2>Reviews</h2>
+        
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12" id="c1">
+                <h4>Reviews
+                    <button class="btn btn-success input" onclick="submit()" >Submit review</button>
+                    <input type="text" class="input" placeholder="Enter your Reviews" id="ip">
+                </h4>
+                <center> 
+                <p class="list-group-item-text col-lg-5 col-md-5 col-sm-5 col-xs-11" id="p1">
+                    <b>Heading</b><br><b>--------------------------------------------</b>
+                        <br>
+                    <span id="t1">The School is located in Landsdale surrounded by natural bushland. The facilities are state of the art and are based on an ecologically sustainable design principle with an emphasis on reducing energy consumption. The school was built to cater for 430 students with the capability to increase this through the use of portable classrooms. Our student population is now approximately 700 students and several classrooms have been added to the site.The buildings include an Early Educat.</span>
+                </p>
+                <p class="list-group-item-text col-lg-5 col-md-5 col-sm-5 col-xs-11" id="p1">
+                    <b>Heading</b><br><b>--------------------------------------------</b>
+                    <br>
+                    <span id="t2">The School is located in Landsdale surrounded by natural bushland. The facilities are state of the art and are based on an ecologically sustainable design principle with an emphasis on reducing energy consumption. The school was built to cater for 430 students with the capability to increase this through the use of portable classrooms. Our student population is now approximately 700 students and several classrooms have been added to the site.The buildings include an Early Educat.</span>
+                </p>
+                <p class="list-group-item-text col-lg-5 col-md-5 col-sm-5 col-xs-11" id="p1">
+                    <b>Heading</b><br><b>--------------------------------------------</b>
+                    <br>
+                    <span id="t3">The School is located in Landsdale surrounded by natural bushland. The facilities are state of the art and are based on an ecologically sustainable design principle with an emphasis on reducing energy consumption. The school was built to cater for 430 students with the capability to increase this through the use of portable classrooms. Our student population is now approximately 700 students and several classrooms have been added to the site.The buildings include an Early Educat.</span>
+                </p>
+                <p class="list-group-item-text col-lg-5 col-md-5 col-sm-5 col-xs-11" id="p1">
+                    <b>Heading</b><br><b>--------------------------------------------</b>
+                    <br>
+                    <span id="t4">The School is located in Landsdale surrounded by natural bushland. The facilities are state of the art and are based on an ecologically sustainable design principle with an emphasis on reducing energy consumption. The school was built to cater for 430 students with the capability to increase this through the use of portable classrooms. Our student population is now approximately 700 students and several classrooms have been added to the site.The buildings include an Early Educat.</span>
+                </p>
+                </center>
+            </li>
+        </ul>
+    </div>
+<div>
+    
+
+        
+        </div>
+        
+        <div class="page-header" id="contacts">
+            <h2 id="hd">Ignore</h2>
+            <h2 id="hd1">Contact us</h2>
+        
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <div class="contact1">
+                <br><br><br><br><br>
+                <a href="mailto:tarinisw07@gmail.com?subject=How may I help you?">
+                    <h4><i class="fa fa-envelope"></i> &nbsp; &nbsp; <!--nbsp adds a space without taking you to the next line unlike br tag which adds a space by taking you to the next line-->
+                    tarinisw07@gmail.com</h4>
+                </a>
+                <br>
+                <a href="https://www.instagram.com">
+                    <h3><i class="fa fa-instagram"></i> &nbsp; &nbsp;
+                    my instagram id - tarini_7_</h3>
+                </a>
+                <br>
+                <a href="#">
+                    <h3><i class="fa fa-phone-square"></i> &nbsp; &nbsp;
+                    1234567890</h3>
+                </a>
+            </div>
+        </div>
+            <img src="My project.png" class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        </div>
+    </div>
+    <script src="main.js"></script>
+    </body>
+</html>
